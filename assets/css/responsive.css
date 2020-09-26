@@ -12,7 +12,7 @@
 	/* HERO
 	================================================== */
 	.hero {
-		min-height: 600px;
+		min-height: 750px;
 	}
 
 	.hero img {
@@ -308,7 +308,8 @@
 	}
 
 	.hero img {
-		height: 360px
+		height: 360px;
+	
 	}
 
 	/* SITEMAIN
