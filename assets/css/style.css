@@ -152,6 +152,43 @@ html, body {
     background-color: #e1e1e1;
 }
 
+/* Pre loading */
+
+.loader-container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(165, 165, 165);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader{
+    width: 50px;
+    height: 50px;
+    border: 5px solid;
+    color: #000000;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: loader 3.2s linear infinite;
+}
+
+@keyframes loader{
+    25%{
+        color: #085515;
+    }
+    50%{
+        color: #550303;
+    }
+    75%{
+        color: #cbf802;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
 /* HEADER
 ================================================== */
 .site-header {
@@ -562,9 +599,4 @@ a.linkdin-bg:hover{color: #007bb5;}
 a.github-bg:hover {color: #000000;}
 a.icon-up-bg:hover {color: #212121;}
 
-.copyright {
-    margin-bottom: 0;
-    line-height: 40px;
-    color: #fff;
-    text-align: center;
-}
+
